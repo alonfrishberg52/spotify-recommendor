@@ -1,0 +1,77 @@
+/* Global Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Fallback for the app */
+    color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Reusable Hover Effect */
+.hover-scale {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Styling */
+.grid {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+.text-lg {
+    font-size: 1.25rem;
+}
+.text-white {
+    color: #fff;
+}
+.text-gray {
+    color: #b0c4de;
+}
+.bg-gradient {
+    background: linear-gradient(to right, #6a3093, #a044ff);
+}
+.rounded {
+    border-radius: 8px;
+}
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
